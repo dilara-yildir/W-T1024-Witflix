@@ -4,8 +4,11 @@ body{
     margin: 1rem;
     padding: 1rem;
     font-family:Bebas Neue ;
+    color:gray;
 
 }
+
+/* HEADER */
 
 header {
    
@@ -14,71 +17,116 @@ header {
     align-items: center;
     padding: 1rem;  
 }
+
 header h1 {
+    text-transform: uppercase;
     color: red;
     margin: 0;
+    flex: 1;
 }
 
-section h2 {
-    display: flex;
-
-}
-   
 header nav {
     display: flex;
+    justify-content: center;
     gap: .5rem;
-    
+
 }
 
 header nav a {
     text-decoration: none;
-    color: #000;
+    color: gray;
 }
 
-.user-panel i {
-    width: 1.5rem;
-    height: 2.5rem
-}
+ header .user-panel {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    flex: 1;
+    justify-content: flex-end;
+ }
+
+.user-panel input {
+    padding: .3rem 1.8rem .3rem .3rem;
+    width: 7rem;
+ }
+
+ .search-icon {
+    margin-left: -2rem;
+ }
 
 .user-panel img {
-    width: 2rem;
-    border-radius: 100%;
-}
+     width: 2rem;
+     border-radius: 100px;
+ }
 
 
+ /* HERO */
 
-.main-hero {
+main {
     display: flex;
     border-radius: 5px;
     border: 1px solid #000;
     margin: 1rem;
     padding: 2rem;
-   
-
 }
+
+.user-rating i {
+    color: red;
+}
+
+.age-rating {
+    border: 1px solid black;
+    border-radius: .3rem;
+    margin: .5rem ;
+}
+
+.main-movie {
+    width: 60%;
+}
+
+.movie-details span {
+    color: red;
+    font-weight: bold;
+}
+
+.movie-details p {
+    margin: .5rem 0 ;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+
+
+
+
+
+
+
+section h2 {
+    display: flex;
+}
+   
  .movie-content {
     margin:0 ;
     margin-top: 10px;
     padding-right: 15rem;
-    
-    
 }
     
-
-
-.movie-info  {
-   display: inline;
-   color: red;
-   
-}
-
-
-
 .movie-list {
     display: flex;
     margin: 0;
-
-    
 }
 
 .movie-card{
@@ -88,58 +136,38 @@ header nav a {
     margin: 1rem;
     border-radius: 5px;
     width: 400px;
-    
-
 }
 
 .movie-card h2 {
     margin-bottom: 10px;
     margin-top: 5px;
-
-    
-
-}
-
-button{
-    background-color: red;
-    color: white;
-    border: none;       
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;    
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    margin-top: 10px;
-    padding-left: 5px;
-    
-}
-
-
-.age-rating {
-    border: 1px solid black;
-    border-radius:3px ;
-    width: 1.7rem;
-    margin-right: 10px;
-    margin-left: 5px;
-
-}
-
-.fa-star {
-    color:red;
-    margin-right: 5px;
 }
 
 .fa-play {
-
     color: white;
 }
 
-footer  nav {
-    display:flex;
-    gap: 50px;
+/* FOOTER */
+
+footer {
+    display: flex;
+    gap: 2rem
 }
 
-footer nav a {
-    text-decoration: none;
-    color: #000; }
+.footer-nav {
+    flex: 1;
+}
+
+footer h4 {
+    margin: 0 0.45em 0.6em;
+}
+
+footer nav {
+    display: flex;
+    gap: 1rem
+}
+
+footer img {
+    height: 3em;
+}
+
